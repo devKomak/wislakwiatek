@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Wisła Kraków</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+          background-color: #990000;
+          padding: 1px 0;
+          font-size: 1.2em;
+          border: 0;
+          height: 70px;
+      }     
+      .navbar-brand {
+          padding-top: 5px; 
+          float: left;
+          min-height: 60px;
+      }    
+      .nav.navbar-nav {
+          padding-top: 10px;
+          height: auto;
+      }   
+      .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+          color: #FFF;
+          background-color: #990000;
+      }       
+      .page-header {
+          color: #FFFFFF;
+          font-size: 1.25em;
+          margin: 0px;
+          padding-top: 20px;
+          float: left;
+          height: 70px; 
+      }  
+      .navbar-inverse .navbar-nav li a{
+          color: #D5D5D5;
+      }
+      .btn {
+          font-size: 18px;
+          color: #FFF;
+          padding: 6px 12px;
+          border: 2px solid #a01818;
+      }  
+      @media (max-width: 600px) {
+          .carousel-caption{
+              display: none;
+          }
+          #icon{
+            max-width: 150px;
+          }
+          h2 {
+              font-size: 1.9em
+          }
+      }
+      #icon {
+          margin: 1% auto;
+      }
+      .container {
+          margin: 4% auto;
+      }
+      .col-md-6 p, h4{
+          font-size: 18px;
+          
+      }
+      
+      #container2{
+          padding-left: 70px;
+      }
+      
+      footer {
+          width: 100%;
+          background-color: #990000;
+          padding: 3%;
+          color: white;
+          height: auto;
+      }
+      .fa {
+          padding: 20px;
+          font-size: 50px;
+          color: #FFF;
+      }
+      .fa:hover {
+          color: #000000;
+          text-decoration: none;
+      }
+      @media (max-width: 900px) {
+          .fa {
+              font-size: 20px;
+              padding: 10px;
+          }}
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>    
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/wisla_logo.png" height="60px"></a>
+                
+                
+                <div class="page-header">
+                  <p> <span class="glyphicon glyphicon-star-empty"></span> WISŁA KRAKÓW SA </p>  
+                </div>
+                   
+            </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Strona główna</a></li>
+                    <li><a href="#">Kadra</a></li>
+                    <li><a href="#">Bilety</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1" ></li>
+             <li data-target="#myCarousel" data-slide-to="2" ></li>     
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            <img src="img/wisla1.png">
+            <div class="carousel-caption">
+                <h1>Nowy stadion Wisły</h1>
+                <br>
+                <button type="button" class="btn btn-danger">Zobacz teraz!</button>
+            </div>
+            </div> <!--- End ACTIVE --->    
+            <div class="item">
+                <img src="img/wisla2.png">
+                <div class="carousel-caption">
+                <h1>Derby Krakowa</h1>
+                <button type="button" class="btn btn-danger">Zobacz relację!</button>
+                </div>
+            </div>          
+             <div class="item">
+                <img src="img/wisla3.png">
+                <div class="carousel-caption">
+                <h1>Całe Nisko za Wisłą</h1>
+                <button type="button" class="btn btn-danger">Dołącz i Ty!</button>
+                </div>
+            </div>
+            <!--- Start Slider Controls-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div> <!--- END SLIDER -->
+    
+    <div class="container text-center"> <!--- text center --->
+        <h2>Cała Wisła zawsze razem</h2>
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="img/wisla_krakow.png" id="icon">
+            </div>
+            <div class="col-xs-6">
+                <img src="img/ts_wisla.png" id="icon">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+            <h2>Hattrick Michała Kwiatka w Derbach Polski!</h2>
+            <p>Wisła Kraków wygrała z Legią w szlagierowym spotkaniu przy Reymonta 3:0. Bohaterem spotkania był niewątpliwie Michał Kwiatek, który trzykrotnie pokonał Arkadiusza Malarza.</p><br>
+            <p>Spotkanie Wisły z Legią było bardzo ważne w kontekście dalszych nadziei na zdobycie tytułu mistrza Polski. - To będzie spotkanie, w którym jednej i drugiej drużynie będzie zależało na wygranej. To może zadecydować o tym, że będzie to otwarty i ciekawy mecz - powiedział nam przed meczem Damian Oska, kapitan Wisły Kraków.</p><br>
+            <p>Wisła zaczęła grać agresywnie, pewnie i w 16. minucie objęła prowadzenie. Po dośrodkowaniu Leo Messiego, Michał Kwiatek głową skierował piłkę do siatki. Druga odsłona rozpoczęła się od mocnego uderzenia Wisły Kraków. Już w pierwszej minucie w znakomitej sytuacji strzeleckiej znalazł się Karim Benzema. Zawodnik ograł Gerarda Pique, ale nie trafił do...pustej bramki. Czego nie dokonał Benzema, zrobił ponownie Michał Kwiatek. Napastnik w 47. minucie spotkania po rzucie rożnym wykonanym przez Kiko Ramireza, wpakował z ostrego kąta piłkę do siatki Malarza. Przez kolejne minuty gra trochę się uspokoiła, a obie strony czekały na błędy przeciwnika. Jednak w 70. minucie spotkania po raz trzeci przypomniał o sobie Michał Kwiatek. Napastnik wykorzystał prostopadłe podanie od Cristiano Ronaldo i pięknym strzałem umieścił pikę w siatce rywala. Michał Kwiatek tym samym ustrzelił hat-tricka w szlagierowym spotkaniu. </p>    
+            </div>
+            <div class="col-md-6">
+                <img src="img/MK1.jpg" >
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <h2>Leo Messi nowym zawodnikiem Białej Gwiazdy</h2>
+            <p>Gwiazda FC Barcelony dziś rano związała się dwuletnim kontraktem z krakowskim klubem. Sam zawodnik stwierdził, że w katalońskim klubie osiągnął już wszystko i chce spróbować swoich sił w polskiej Ekstraklasie. Nieprzypadkowo dołączył do drużyny Białej Gwiazdy, ponieważ jak sam mówi: "Od zawsze kibicowałem Wiśle". Nieoficjalnie mówi sę również, że krakowski klub jako jedyny zaoferował argentyńczykowi podobne zarobki jakie miał w poprzednim klubie. Czy zwodnik okaże się dużym wzmocnieniem i "wygryzie" ze składu młody wiślacki talent jakim jest Paweł Brożek?</p>   
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="img/messi.jpg" >
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" id="container2">
+            <h2>Cracovia spada do 1 ligi</h2>
+            <p>W ostatnim decydującym meczu kolejki Cracovia przegrywa z drużną Finishparkiet Drwęca Nowa Miasto Lubawskie 2:0 i opuszcza Ekstraklasę. Drużyna Pasów była bezradna w starciu z beniaminkiem. Tuż po meczu trener Michał Probierz poddał się do dymisji, a część zawodników zapowiedziała rozwiązanie kontraktu z klubem.</p><br><p>Skutkiem tym wydarzeń jest pozostanie w Ekstraklasie jedynego klubu z grodu Kraka, Mistrza Polski - Wisła Kraków </p>   
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="img/cracovia.png" >
+            </div>
+        </div>
+    </div>
+   
+        <div class="container">
+        <div class="row">
+            <k4><a href="#hidden" data-toggle="collapse">Poznaj naszego trenera - Ronniego O'Sullivana!</a></k4>
+            <div id="hidden" class="collapse">
+            <h2>Ronnie O'Sullivan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tempor eros ut interdum. Integer viverra tristique magna, ut viverra massa condimentum tristique. Maecenas congue quis urna sit amet rutrum. Vivamus blandit iaculis sem quis commodo. Nullam elementum tincidunt orci, ut lobortis enim malesuada ac. Sed ac purus convallis, consectetur risus malesuada, fringilla massa. Praesent est tortor, dignissim ut ligula eget, egestas malesuada nisi. Curabitur luctus enim in nulla lobortis volutpat. Ut sed volutpat lacus, eget faucibus lorem. Etiam ac tempor dui. Maecenas pharetra mollis orci, ac dapibus risus. Nunc eleifend nulla id lorem facilisis luctus. Donec tristique diam vitae dui condimentum ornare. Sed tempor est vel suscipit dictum. Vivamus semper est non laoreet hendrerit.</p>   
+           </div>
+        </div>
+        </div>
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Kontakt</h3>
+                <br>
+                <h4>Informacje dodatkowe</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Media</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+
+            </div> 
+            <div class="col-sm-4">
+                <img src="img/dragon.png" class="icon" width=40%>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
